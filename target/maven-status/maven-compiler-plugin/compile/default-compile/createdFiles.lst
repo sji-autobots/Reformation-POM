@@ -1,0 +1,4 @@
+com\template\utils\DriverFactory.class
+com\template\pages\BasePage.class
+com\template\pages\HomePage.class
+com\template\utils\ConfigReader.class
