@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Reformation Automation Suite</th></tr>
+<tr><td><a href="#t0">Cart Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">211,299</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Bag Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">149,134</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Country Currency Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">56,907</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">PreOrder Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">38,889</td><td></td><td></td></tr>
+<tr><td><a href="#t4">Open Site Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">32,170</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">9</th><th class="num">488,399</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Reformation Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Cart Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.reformation.tests.AddUnitsTest</td><td><a href="#m0">testAddUnits</a></td><td rowspan="1">1772543966030</td><td rowspan="1">55991</td></tr><tr class="failedodd"><td rowspan="1">com.reformation.tests.DeductUnitsTest</td><td><a href="#m1">testDeductUnits</a></td><td rowspan="1">1772544023752</td><td rowspan="1">37384</td></tr><tr class="failedeven"><td rowspan="1">com.reformation.tests.DeleteFromCartTest</td><td><a href="#m2">testDeleteFromCart</a></td><td rowspan="1">1772544118412</td><td rowspan="1">55295</td></tr><tr class="failedodd"><td rowspan="1">com.reformation.tests.RemoveFromCartTest</td><td><a href="#m3">testRemoveFromCart</a></td><td rowspan="1">1772544062703</td><td rowspan="1">54056</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Bag Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.reformation.tests.BagAddUnitsTest</td><td><a href="#m4">testBagAddUnits</a></td><td rowspan="1">1772544175400</td><td rowspan="1">36819</td></tr><tr class="failedodd"><td rowspan="1">com.reformation.tests.BagDeductUnitsTest</td><td><a href="#m5">testBagDeductUnits</a></td><td rowspan="1">1772544213949</td><td rowspan="1">50746</td></tr><tr class="failedeven"><td rowspan="1">com.reformation.tests.BagRemoveProductTest</td><td><a href="#m6">testBagRemoveProduct</a></td><td rowspan="1">1772544266471</td><td rowspan="1">56394</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Country Currency Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.reformation.tests.CountryCurrencyCATest</td><td><a href="#m7">testCountryCurrencyCA</a></td><td rowspan="1">1772544324406</td><td rowspan="1">55120</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">PreOrder Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.reformation.tests.PreOrderLabel</td><td><a href="#m8">testPreOrderLabel</a></td><td rowspan="1">1772544381282</td><td rowspan="1">37206</td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4">Open Site Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.reformation.tests.OpenSiteTest</td><td><a href="#m9">testOpenSite</a></td><td rowspan="1">1772544420349</td><td rowspan="1">30312</td></tr></tbody>
+</table>
+<h2>Cart Tests</h2><h3 id="m0">com.reformation.tests.AddUnitsTest#testAddUnits</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),&apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;,&apos;abcdefghijklmnopqrstuvwxyz&apos;),&apos;clothing&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49555}, goog:processID: 57504, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49555/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 668d7a9709ab3db0cf163fcdce7e5032
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.AddUnitsTest.testAddUnits(AddUnitsTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.reformation.tests.DeductUnitsTest#testDeductUnits</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),&apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;,&apos;abcdefghijklmnopqrstuvwxyz&apos;),&apos;clothing&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60843}, goog:processID: 59788, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60843/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf2be74546f93c3b9998ac44112a08b6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.DeductUnitsTest.testDeductUnits(DeductUnitsTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.reformation.tests.DeleteFromCartTest#testDeleteFromCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),&apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;,&apos;abcdefghijklmnopqrstuvwxyz&apos;),&apos;clothing&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58055}, goog:processID: 57688, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58055/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2457788aa6d181ffbcc96f1dd5b4347c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.DeleteFromCartTest.testDeleteFromCart(DeleteFromCartTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.reformation.tests.RemoveFromCartTest#testRemoveFromCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),&apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;,&apos;abcdefghijklmnopqrstuvwxyz&apos;),&apos;clothing&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59958}, goog:processID: 60612, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59958/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e9e57f545f19e7ac8fd7b25b282ff95
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.RemoveFromCartTest.testRemoveFromCart(RemoveFromCartTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Bag Tests</h2><h3 id="m4">com.reformation.tests.BagAddUnitsTest#testBagAddUnits</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),&apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;,&apos;abcdefghijklmnopqrstuvwxyz&apos;),&apos;clothing&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50360}, goog:processID: 61400, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50360/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d1f1407f5b3a83fd48d73882a195269
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.BagAddUnitsTest.testBagAddUnits(BagAddUnitsTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.reformation.tests.BagDeductUnitsTest#testBagDeductUnits</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),&apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;,&apos;abcdefghijklmnopqrstuvwxyz&apos;),&apos;clothing&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52288}, goog:processID: 60932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52288/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25937b07d0abc421843545169de7de14
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.BagDeductUnitsTest.testBagDeductUnits(BagDeductUnitsTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.reformation.tests.BagRemoveProductTest#testBagRemoveProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),&apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;,&apos;abcdefghijklmnopqrstuvwxyz&apos;),&apos;clothing&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64003}, goog:processID: 62904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64003/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d25a43126d7362a29ce957121354d9f3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.BagRemoveProductTest.testBagRemoveProduct(BagRemoveProductTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Country Currency Tests</h2><h3 id="m7">com.reformation.tests.CountryCurrencyCATest#testCountryCurrencyCA</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: accountFlyoutTriggerDesktop (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50857}, goog:processID: 63560, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50857/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 275abce3c224bf5aac74574ee7449f44
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.CountryCurrencyCATest.testCountryCurrencyCA(CountryCurrencyCATest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>PreOrder Tests</h2><h3 id="m8">com.reformation.tests.PreOrderLabel#testPreOrderLabel</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),&apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;,&apos;abcdefghijklmnopqrstuvwxyz&apos;),&apos;clothing&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63072}, goog:processID: 63232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63072/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7383f03f2c461071e08b8aad30dd7fc9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.PreOrderLabel.testPreOrderLabel(PreOrderLabel.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Open Site Test</h2><h3 id="m9">com.reformation.tests.OpenSiteTest#testOpenSite</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

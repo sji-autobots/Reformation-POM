@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="1" failed="9" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-03T18:49:22 IST" name="Reformation Automation Suite" finished-at="2026-03-03T18:57:31 IST" duration-ms="488464">
+    <groups>
+    </groups>
+    <test started-at="2026-03-03T18:49:22 IST" name="Cart Tests" finished-at="2026-03-03T18:52:54 IST" duration-ms="211299">
+      <class name="com.reformation.tests.AddUnitsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.reformation.tests.AddUnitsTest@189aa67a]" started-at="2026-03-03T18:49:22 IST" name="setUp" finished-at="2026-03-03T18:49:26 IST" duration-ms="3129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddUnits()[pri:0, instance:com.reformation.tests.AddUnitsTest@189aa67a]" started-at="2026-03-03T18:49:26 IST" name="testAddUnits" finished-at="2026-03-03T18:50:22 IST" duration-ms="55991" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'clothing')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49555}, goog:processID: 57504, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49555/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 668d7a9709ab3db0cf163fcdce7e5032]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'clothing')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49555}, goog:processID: 57504, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49555/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 668d7a9709ab3db0cf163fcdce7e5032
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.reformation.tests.AddUnitsTest.testAddUnits(AddUnitsTest.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddUnits -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.reformation.tests.AddUnitsTest@189aa67a]" started-at="2026-03-03T18:50:22 IST" name="tearDown" finished-at="2026-03-03T18:50:22 IST" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.reformation.tests.AddUnitsTest -->
+      <class name="com.reformation.tests.DeleteFromCartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.reformation.tests.DeleteFromCartTest@3243b914]" started-at="2026-03-03T18:51:57 IST" name="setUp" finished-at="2026-03-03T18:51:58 IST" duration-ms="1119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeleteFromCart()[pri:0, instance:com.reformation.tests.DeleteFromCartTest@3243b914]" started-at="2026-03-03T18:51:58 IST" name="testDeleteFromCart" finished-at="2026-03-03T18:52:53 IST" duration-ms="55295" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'clothing')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58055}, goog:processID: 57688, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58055/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2457788aa6d181ffbcc96f1dd5b4347c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'clothing')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58055}, goog:processID: 57688, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58055/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2457788aa6d181ffbcc96f1dd5b4347c
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.reformation.tests.DeleteFromCartTest.testDeleteFromCart(DeleteFromCartTest.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteFromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.reformation.tests.DeleteFromCartTest@3243b914]" started-at="2026-03-03T18:52:53 IST" name="tearDown" finished-at="2026-03-03T18:52:54 IST" duration-ms="459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.reformation.tests.DeleteFromCartTest -->
+      <class name="com.reformation.tests.RemoveFromCartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.reformation.tests.RemoveFromCartTest@31d0e481]" started-at="2026-03-03T18:51:01 IST" name="setUp" finished-at="2026-03-03T18:51:02 IST" duration-ms="1069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRemoveFromCart()[pri:0, instance:com.reformation.tests.RemoveFromCartTest@31d0e481]" started-at="2026-03-03T18:51:02 IST" name="testRemoveFromCart" finished-at="2026-03-03T18:51:56 IST" duration-ms="54056" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'clothing')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59958}, goog:processID: 60612, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59958/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e9e57f545f19e7ac8fd7b25b282ff95]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'clothing')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59958}, goog:processID: 60612, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59958/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e9e57f545f19e7ac8fd7b25b282ff95
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.reformation.tests.RemoveFromCartTest.testRemoveFromCart(RemoveFromCartTest.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveFromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.reformation.tests.RemoveFromCartTest@31d0e481]" started-at="2026-03-03T18:51:56 IST" name="tearDown" finished-at="2026-03-03T18:51:57 IST" duration-ms="532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.reformation.tests.RemoveFromCartTest -->
+      <class name="com.reformation.tests.DeductUnitsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.reformation.tests.DeductUnitsTest@59252cb6]" started-at="2026-03-03T18:50:22 IST" name="setUp" finished-at="2026-03-03T18:50:23 IST" duration-ms="1195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeductUnits()[pri:0, instance:com.reformation.tests.DeductUnitsTest@59252cb6]" started-at="2026-03-03T18:50:23 IST" name="testDeductUnits" finished-at="2026-03-03T18:51:01 IST" duration-ms="37384" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'clothing')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60843}, goog:processID: 59788, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60843/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf2be74546f93c3b9998ac44112a08b6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'clothing')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60843}, goog:processID: 59788, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60843/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf2be74546f93c3b9998ac44112a08b6
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.reformation.tests.DeductUnitsTest.testDeductUnits(DeductUnitsTest.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeductUnits -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.reformation.tests.DeductUnitsTest@59252cb6]" started-at="2026-03-03T18:51:01 IST" name="tearDown" finished-at="2026-03-03T18:51:01 IST" duration-ms="495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.reformation.tests.DeductUnitsTest -->
+    </test> <!-- Cart Tests -->
+    <test started-at="2026-03-03T18:52:54 IST" name="Bag Tests" finished-at="2026-03-03T18:55:23 IST" duration-ms="149134">
+      <class name="com.reformation.tests.BagAddUnitsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.reformation.tests.BagAddUnitsTest@2ceb80a1]" started-at="2026-03-03T18:52:54 IST" name="setUp" finished-at="2026-03-03T18:52:55 IST" duration-ms="1200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBagAddUnits()[pri:0, instance:com.reformation.tests.BagAddUnitsTest@2ceb80a1]" started-at="2026-03-03T18:52:55 IST" name="testBagAddUnits" finished-at="2026-03-03T18:53:32 IST" duration-ms="36819" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'clothing')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50360}, goog:processID: 61400, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50360/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d1f1407f5b3a83fd48d73882a195269]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'clothing')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50360}, goog:processID: 61400, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50360/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d1f1407f5b3a83fd48d73882a195269
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.reformation.tests.BagAddUnitsTest.testBagAddUnits(BagAddUnitsTest.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBagAddUnits -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.reformation.tests.BagAddUnitsTest@2ceb80a1]" started-at="2026-03-03T18:53:32 IST" name="tearDown" finished-at="2026-03-03T18:53:32 IST" duration-ms="693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.reformation.tests.BagAddUnitsTest -->
+      <class name="com.reformation.tests.BagDeductUnitsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.reformation.tests.BagDeductUnitsTest@4b45dcb8]" started-at="2026-03-03T18:53:32 IST" name="setUp" finished-at="2026-03-03T18:53:33 IST" duration-ms="1036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBagDeductUnits()[pri:0, instance:com.reformation.tests.BagDeductUnitsTest@4b45dcb8]" started-at="2026-03-03T18:53:33 IST" name="testBagDeductUnits" finished-at="2026-03-03T18:54:24 IST" duration-ms="50746" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'clothing')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52288}, goog:processID: 60932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52288/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25937b07d0abc421843545169de7de14]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'clothing')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52288}, goog:processID: 60932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52288/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25937b07d0abc421843545169de7de14
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.reformation.tests.BagDeductUnitsTest.testBagDeductUnits(BagDeductUnitsTest.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBagDeductUnits -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.reformation.tests.BagDeductUnitsTest@4b45dcb8]" started-at="2026-03-03T18:54:24 IST" name="tearDown" finished-at="2026-03-03T18:54:25 IST" duration-ms="659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.reformation.tests.BagDeductUnitsTest -->
+      <class name="com.reformation.tests.BagRemoveProductTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.reformation.tests.BagRemoveProductTest@7216fb24]" started-at="2026-03-03T18:54:25 IST" name="setUp" finished-at="2026-03-03T18:54:26 IST" duration-ms="1116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBagRemoveProduct()[pri:0, instance:com.reformation.tests.BagRemoveProductTest@7216fb24]" started-at="2026-03-03T18:54:26 IST" name="testBagRemoveProduct" finished-at="2026-03-03T18:55:22 IST" duration-ms="56394" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'clothing')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64003}, goog:processID: 62904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64003/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d25a43126d7362a29ce957121354d9f3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'clothing')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64003}, goog:processID: 62904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64003/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d25a43126d7362a29ce957121354d9f3
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.reformation.tests.BagRemoveProductTest.testBagRemoveProduct(BagRemoveProductTest.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBagRemoveProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.reformation.tests.BagRemoveProductTest@7216fb24]" started-at="2026-03-03T18:55:22 IST" name="tearDown" finished-at="2026-03-03T18:55:23 IST" duration-ms="467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.reformation.tests.BagRemoveProductTest -->
+    </test> <!-- Bag Tests -->
+    <test started-at="2026-03-03T18:55:23 IST" name="Country Currency Tests" finished-at="2026-03-03T18:56:20 IST" duration-ms="56907">
+      <class name="com.reformation.tests.CountryCurrencyCATest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.reformation.tests.CountryCurrencyCATest@d3957fe]" started-at="2026-03-03T18:55:23 IST" name="setUp" finished-at="2026-03-03T18:55:24 IST" duration-ms="1054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCountryCurrencyCA()[pri:0, instance:com.reformation.tests.CountryCurrencyCATest@d3957fe]" started-at="2026-03-03T18:55:24 IST" name="testCountryCurrencyCA" finished-at="2026-03-03T18:56:19 IST" duration-ms="55120" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.id: accountFlyoutTriggerDesktop (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50857}, goog:processID: 63560, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50857/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 275abce3c224bf5aac74574ee7449f44]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: accountFlyoutTriggerDesktop (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50857}, goog:processID: 63560, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50857/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 275abce3c224bf5aac74574ee7449f44
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.reformation.tests.CountryCurrencyCATest.testCountryCurrencyCA(CountryCurrencyCATest.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountryCurrencyCA -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.reformation.tests.CountryCurrencyCATest@d3957fe]" started-at="2026-03-03T18:56:19 IST" name="tearDown" finished-at="2026-03-03T18:56:20 IST" duration-ms="732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.reformation.tests.CountryCurrencyCATest -->
+    </test> <!-- Country Currency Tests -->
+    <test started-at="2026-03-03T18:56:20 IST" name="PreOrder Tests" finished-at="2026-03-03T18:56:59 IST" duration-ms="38889">
+      <class name="com.reformation.tests.PreOrderLabel">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.reformation.tests.PreOrderLabel@158a3b2e]" started-at="2026-03-03T18:56:20 IST" name="setUp" finished-at="2026-03-03T18:56:21 IST" duration-ms="1016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPreOrderLabel()[pri:0, instance:com.reformation.tests.PreOrderLabel@158a3b2e]" started-at="2026-03-03T18:56:21 IST" name="testPreOrderLabel" finished-at="2026-03-03T18:56:58 IST" duration-ms="37206" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'clothing')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63072}, goog:processID: 63232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63072/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7383f03f2c461071e08b8aad30dd7fc9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'clothing')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63072}, goog:processID: 63232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63072/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7383f03f2c461071e08b8aad30dd7fc9
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.reformation.tests.PreOrderLabel.testPreOrderLabel(PreOrderLabel.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPreOrderLabel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.reformation.tests.PreOrderLabel@158a3b2e]" started-at="2026-03-03T18:56:58 IST" name="tearDown" finished-at="2026-03-03T18:56:59 IST" duration-ms="666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.reformation.tests.PreOrderLabel -->
+    </test> <!-- PreOrder Tests -->
+    <test started-at="2026-03-03T18:56:59 IST" name="Open Site Test" finished-at="2026-03-03T18:57:31 IST" duration-ms="32170">
+      <class name="com.reformation.tests.OpenSiteTest">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.reformation.tests.OpenSiteTest@3e821657]" started-at="2026-03-03T18:49:22 IST" name="setUpSuite" finished-at="2026-03-03T18:49:22 IST" duration-ms="386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.reformation.tests.OpenSiteTest@3e821657]" started-at="2026-03-03T18:56:59 IST" name="setUp" finished-at="2026-03-03T18:57:00 IST" duration-ms="1186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testOpenSite()[pri:0, instance:com.reformation.tests.OpenSiteTest@3e821657]" started-at="2026-03-03T18:57:00 IST" name="testOpenSite" finished-at="2026-03-03T18:57:30 IST" duration-ms="30312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenSite -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.reformation.tests.OpenSiteTest@3e821657]" started-at="2026-03-03T18:57:30 IST" name="tearDown" finished-at="2026-03-03T18:57:31 IST" duration-ms="669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:com.reformation.tests.OpenSiteTest@3e821657]" started-at="2026-03-03T18:57:31 IST" name="tearDownSuite" finished-at="2026-03-03T18:57:31 IST" duration-ms="369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- com.reformation.tests.OpenSiteTest -->
+    </test> <!-- Open Site Test -->
+  </suite> <!-- Reformation Automation Suite -->
+</testng-results>

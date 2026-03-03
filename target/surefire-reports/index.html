@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Reformation_Automation_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Reformation Automation Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Reformation_Automation_Suite" class="navigator-link ">
+                    <span>C:\Users\SJI-GOA-18\Documents\Automation\Reformation - POM\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Reformation_Automation_Suite" class="navigator-link ">
+                    <span class="test-stats">5 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Reformation_Automation_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Reformation_Automation_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Reformation_Automation_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Reformation_Automation_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Reformation_Automation_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 9 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Reformation_Automation_Suite" class="hide-methods failed suite-Reformation_Automation_Suite"> (hide)</a> <!-- hide-methods failed suite-Reformation_Automation_Suite -->
+                      <a href="#" panel-name="suite-Reformation_Automation_Suite" class="show-methods failed suite-Reformation_Automation_Suite"> (show)</a> <!-- show-methods failed suite-Reformation_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Reformation_Automation_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Reformation_Automation_Suite" title="com.reformation.tests.AddUnitsTest" class="method navigator-link" hash-for-method="testAddUnits">testAddUnits</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Reformation_Automation_Suite" title="com.reformation.tests.BagAddUnitsTest" class="method navigator-link" hash-for-method="testBagAddUnits">testBagAddUnits</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Reformation_Automation_Suite" title="com.reformation.tests.BagDeductUnitsTest" class="method navigator-link" hash-for-method="testBagDeductUnits">testBagDeductUnits</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Reformation_Automation_Suite" title="com.reformation.tests.BagRemoveProductTest" class="method navigator-link" hash-for-method="testBagRemoveProduct">testBagRemoveProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Reformation_Automation_Suite" title="com.reformation.tests.CountryCurrencyCATest" class="method navigator-link" hash-for-method="testCountryCurrencyCA">testCountryCurrencyCA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Reformation_Automation_Suite" title="com.reformation.tests.DeductUnitsTest" class="method navigator-link" hash-for-method="testDeductUnits">testDeductUnits</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Reformation_Automation_Suite" title="com.reformation.tests.DeleteFromCartTest" class="method navigator-link" hash-for-method="testDeleteFromCart">testDeleteFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Reformation_Automation_Suite" title="com.reformation.tests.PreOrderLabel" class="method navigator-link" hash-for-method="testPreOrderLabel">testPreOrderLabel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Reformation_Automation_Suite" title="com.reformation.tests.RemoveFromCartTest" class="method navigator-link" hash-for-method="testRemoveFromCart">testRemoveFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Reformation_Automation_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Reformation_Automation_Suite" class="hide-methods passed suite-Reformation_Automation_Suite"> (hide)</a> <!-- hide-methods passed suite-Reformation_Automation_Suite -->
+                      <a href="#" panel-name="suite-Reformation_Automation_Suite" class="show-methods passed suite-Reformation_Automation_Suite"> (show)</a> <!-- show-methods passed suite-Reformation_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Reformation_Automation_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Reformation_Automation_Suite" title="com.reformation.tests.OpenSiteTest" class="method navigator-link" hash-for-method="testOpenSite">testOpenSite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Reformation_Automation_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Reformation_Automation_Suite" class="panel Reformation_Automation_Suite">
+          <div class="suite-Reformation_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.reformation.tests.BagRemoveProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBagRemoveProduct">
+                  </a> <!-- testBagRemoveProduct -->
+                  <span class="method-name">testBagRemoveProduct</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),&apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;,&apos;abcdefghijklmnopqrstuvwxyz&apos;),&apos;clothing&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64003}, goog:processID: 62904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64003/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d25a43126d7362a29ce957121354d9f3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.BagRemoveProductTest.testBagRemoveProduct(BagRemoveProductTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Reformation_Automation_Suite-class-failed -->
+          <div class="suite-Reformation_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.reformation.tests.RemoveFromCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveFromCart">
+                  </a> <!-- testRemoveFromCart -->
+                  <span class="method-name">testRemoveFromCart</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),&apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;,&apos;abcdefghijklmnopqrstuvwxyz&apos;),&apos;clothing&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59958}, goog:processID: 60612, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59958/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e9e57f545f19e7ac8fd7b25b282ff95
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.RemoveFromCartTest.testRemoveFromCart(RemoveFromCartTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Reformation_Automation_Suite-class-failed -->
+          <div class="suite-Reformation_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.reformation.tests.PreOrderLabel</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPreOrderLabel">
+                  </a> <!-- testPreOrderLabel -->
+                  <span class="method-name">testPreOrderLabel</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),&apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;,&apos;abcdefghijklmnopqrstuvwxyz&apos;),&apos;clothing&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63072}, goog:processID: 63232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63072/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7383f03f2c461071e08b8aad30dd7fc9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.PreOrderLabel.testPreOrderLabel(PreOrderLabel.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Reformation_Automation_Suite-class-failed -->
+          <div class="suite-Reformation_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.reformation.tests.CountryCurrencyCATest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCountryCurrencyCA">
+                  </a> <!-- testCountryCurrencyCA -->
+                  <span class="method-name">testCountryCurrencyCA</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: accountFlyoutTriggerDesktop (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50857}, goog:processID: 63560, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50857/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 275abce3c224bf5aac74574ee7449f44
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.CountryCurrencyCATest.testCountryCurrencyCA(CountryCurrencyCATest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Reformation_Automation_Suite-class-failed -->
+          <div class="suite-Reformation_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.reformation.tests.BagDeductUnitsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBagDeductUnits">
+                  </a> <!-- testBagDeductUnits -->
+                  <span class="method-name">testBagDeductUnits</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),&apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;,&apos;abcdefghijklmnopqrstuvwxyz&apos;),&apos;clothing&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52288}, goog:processID: 60932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52288/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25937b07d0abc421843545169de7de14
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.BagDeductUnitsTest.testBagDeductUnits(BagDeductUnitsTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Reformation_Automation_Suite-class-failed -->
+          <div class="suite-Reformation_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.reformation.tests.DeleteFromCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteFromCart">
+                  </a> <!-- testDeleteFromCart -->
+                  <span class="method-name">testDeleteFromCart</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),&apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;,&apos;abcdefghijklmnopqrstuvwxyz&apos;),&apos;clothing&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58055}, goog:processID: 57688, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58055/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2457788aa6d181ffbcc96f1dd5b4347c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.DeleteFromCartTest.testDeleteFromCart(DeleteFromCartTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Reformation_Automation_Suite-class-failed -->
+          <div class="suite-Reformation_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.reformation.tests.AddUnitsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddUnits">
+                  </a> <!-- testAddUnits -->
+                  <span class="method-name">testAddUnits</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),&apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;,&apos;abcdefghijklmnopqrstuvwxyz&apos;),&apos;clothing&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49555}, goog:processID: 57504, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49555/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 668d7a9709ab3db0cf163fcdce7e5032
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.AddUnitsTest.testAddUnits(AddUnitsTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Reformation_Automation_Suite-class-failed -->
+          <div class="suite-Reformation_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.reformation.tests.BagAddUnitsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBagAddUnits">
+                  </a> <!-- testBagAddUnits -->
+                  <span class="method-name">testBagAddUnits</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),&apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;,&apos;abcdefghijklmnopqrstuvwxyz&apos;),&apos;clothing&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50360}, goog:processID: 61400, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50360/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d1f1407f5b3a83fd48d73882a195269
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.BagAddUnitsTest.testBagAddUnits(BagAddUnitsTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Reformation_Automation_Suite-class-failed -->
+          <div class="suite-Reformation_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.reformation.tests.DeductUnitsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeductUnits">
+                  </a> <!-- testDeductUnits -->
+                  <span class="method-name">testDeductUnits</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //nav//a[contains(translate(text(),&apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;,&apos;abcdefghijklmnopqrstuvwxyz&apos;),&apos;clothing&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SJI-GO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60843}, goog:processID: 59788, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60843/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf2be74546f93c3b9998ac44112a08b6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.reformation.tests.DeductUnitsTest.testDeductUnits(DeductUnitsTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Reformation_Automation_Suite-class-failed -->
+          <div class="suite-Reformation_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.reformation.tests.OpenSiteTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOpenSite">
+                  </a> <!-- testOpenSite -->
+                  <span class="method-name">testOpenSite</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Reformation_Automation_Suite-class-passed -->
+        </div> <!-- panel Reformation_Automation_Suite -->
+        <div panel-name="test-xml-Reformation_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\SJI-GOA-18\Documents\Automation\Reformation - POM\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Reformation Automation Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Cart Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.reformation.tests.AddUnitsTest&quot;/&gt;
+      &lt;class name=&quot;com.reformation.tests.DeductUnitsTest&quot;/&gt;
+      &lt;class name=&quot;com.reformation.tests.RemoveFromCartTest&quot;/&gt;
+      &lt;class name=&quot;com.reformation.tests.DeleteFromCartTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Cart Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Bag Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.reformation.tests.BagAddUnitsTest&quot;/&gt;
+      &lt;class name=&quot;com.reformation.tests.BagDeductUnitsTest&quot;/&gt;
+      &lt;class name=&quot;com.reformation.tests.BagRemoveProductTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Bag Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Country Currency Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.reformation.tests.CountryCurrencyTest&quot;/&gt;
+      &lt;class name=&quot;com.reformation.tests.CountryCurrencyCATest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Country Currency Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;PreOrder Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.reformation.tests.PreOrderLabel&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PreOrder Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Open Site Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.reformation.tests.OpenSiteTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Open Site Test --&gt;
+&lt;/suite&gt; &lt;!-- Reformation Automation Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Reformation_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Reformation Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Cart Tests (4 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Bag Tests (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Country Currency Tests (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">PreOrder Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Open Site Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Reformation_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Reformation Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Reformation_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Reformation Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Reformation_Automation_Suite');
+function tableData_Reformation_Automation_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testBagRemoveProduct')
+data.setCell(0, 2, 'com.reformation.tests.BagRemoveProductTest')
+data.setCell(0, 3, 56394);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testAddUnits')
+data.setCell(1, 2, 'com.reformation.tests.AddUnitsTest')
+data.setCell(1, 3, 55991);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testDeleteFromCart')
+data.setCell(2, 2, 'com.reformation.tests.DeleteFromCartTest')
+data.setCell(2, 3, 55295);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testCountryCurrencyCA')
+data.setCell(3, 2, 'com.reformation.tests.CountryCurrencyCATest')
+data.setCell(3, 3, 55120);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testRemoveFromCart')
+data.setCell(4, 2, 'com.reformation.tests.RemoveFromCartTest')
+data.setCell(4, 3, 54056);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testBagDeductUnits')
+data.setCell(5, 2, 'com.reformation.tests.BagDeductUnitsTest')
+data.setCell(5, 3, 50746);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testDeductUnits')
+data.setCell(6, 2, 'com.reformation.tests.DeductUnitsTest')
+data.setCell(6, 3, 37384);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testPreOrderLabel')
+data.setCell(7, 2, 'com.reformation.tests.PreOrderLabel')
+data.setCell(7, 3, 37206);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testBagAddUnits')
+data.setCell(8, 2, 'com.reformation.tests.BagAddUnitsTest')
+data.setCell(8, 3, 36819);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testOpenSite')
+data.setCell(9, 2, 'com.reformation.tests.OpenSiteTest')
+data.setCell(9, 3, 30312);
+window.suiteTableData['Reformation_Automation_Suite']= { tableData: data, tableDiv: 'times-div-Reformation_Automation_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <div id="times-div-Reformation_Automation_Suite">
+              </div> <!-- times-div-Reformation_Automation_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Reformation_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Reformation Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Reformation_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">12 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.reformation.tests.BagRemoveProductTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpSuite</span>
+                <br/>
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.reformation.tests.RemoveFromCartTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+                <span class="ignored-method-name">setUpSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.reformation.tests.CountryCurrencyCATest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpSuite</span>
+                <br/>
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.reformation.tests.BagDeductUnitsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+                <span class="ignored-method-name">setUpSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.reformation.tests.DeleteFromCartTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpSuite</span>
+                <br/>
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.reformation.tests.DeductUnitsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpSuite</span>
+                <br/>
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Reformation_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.reformation.tests.OpenSiteTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUpSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.reformation.tests.AddUnitsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">419 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAddUnits</span>
+                <span class="method-start">3549 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">59540 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.reformation.tests.DeductUnitsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">60075 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeductUnits</span>
+                <span class="method-start">61271 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">98657 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.reformation.tests.RemoveFromCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">99152 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRemoveFromCart</span>
+                <span class="method-start">100222 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">154278 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.reformation.tests.DeleteFromCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">154812 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeleteFromCart</span>
+                <span class="method-start">155931 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">211227 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.reformation.tests.BagAddUnitsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">211719 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testBagAddUnits</span>
+                <span class="method-start">212919 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">249739 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.reformation.tests.BagDeductUnitsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">250432 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testBagDeductUnits</span>
+                <span class="method-start">251468 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">302215 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.reformation.tests.BagRemoveProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">302874 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testBagRemoveProduct</span>
+                <span class="method-start">303990 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">360384 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.reformation.tests.CountryCurrencyCATest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">360871 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCountryCurrencyCA</span>
+                <span class="method-start">361925 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">417045 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.reformation.tests.PreOrderLabel</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">417785 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testPreOrderLabel</span>
+                <span class="method-start">418801 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">456008 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.reformation.tests.OpenSiteTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">456682 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testOpenSite</span>
+                <span class="method-start">457868 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">488180 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDownSuite</span>
+                <span class="method-start">488856 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

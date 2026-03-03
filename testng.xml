@@ -1,8 +1,84 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Template Automation Suite">
-    <test name="Sample Tests">
+<suite name="Reformation Automation Suite">
+    <test name="Cart Tests">
         <classes>
-            <class name="com.template.tests.HomePageTest"/>
+            <class name="com.reformation.tests.AddUnitsTest"/>
+            <class name="com.reformation.tests.DeductUnitsTest"/>
+            <class name="com.reformation.tests.RemoveFromCartTest"/>
+            <class name="com.reformation.tests.DeleteFromCartTest"/>
         </classes>
     </test>
+    <test name="Bag Tests">
+        <classes>
+            <class name="com.reformation.tests.BagAddUnitsTest"/>
+            <class name="com.reformation.tests.BagDeductUnitsTest"/>
+            <class name="com.reformation.tests.BagRemoveProductTest"/>
+        </classes>
+    </test>
+    <test name="Country Currency Tests">
+        <classes>
+            <class name="com.reformation.tests.CountryCurrencyTest"/>
+            <class name="com.reformation.tests.CountryCurrencyCATest"/>
+        </classes>
+    </test>
+    <test name="PreOrder Tests">
+        <classes>
+            <class name="com.reformation.tests.PreOrderLabel"/>
+        </classes>
+    </test>
+    <test name="Open Site Test">
+        <classes>
+            <class name="com.reformation.tests.OpenSiteTest"/>
+        </classes>
+    </test>
+    <!-- <test name="HomePageTest">
+        <classes>
+            <class name="com.reformation.tests.HomePageTest"/>
+        </classes>
+    </test> -->
+    <!-- <test name="DefaultAddressTest">
+        <classes>
+            <class name="com.reformation.tests.DefaultAddressTest"/>
+        </classes>
+    </test>
+    <test name="DeleteAddressTest">
+        <classes>
+            <class name="com.reformation.tests.DeleteAddressTest"/>
+        </classes>
+    </test>
+    <test name="EditAddressTest">
+        <classes>
+            <class name="com.reformation.tests.EditAddressTest"/>
+        </classes>
+    </test>
+    <test name="NewAddressTest">
+        <classes>
+            <class name="com.reformation.tests.NewAddressTest"/>
+        </classes>
+    </test>
+    <test name="NonVIPTest">
+        <classes>
+            <class name="com.reformation.tests.NonVIPTest"/>
+        </classes>
+    </test>
+    <test name="OrderHistoryPositionTest">
+        <classes>
+            <class name="com.reformation.tests.OrderHistoryPositionTest"/>
+        </classes>
+    </test>
+    <test name="OrderHistoryTest">
+        <classes>
+            <class name="com.reformation.tests.OrderHistoryTest"/>
+        </classes>
+    </test>
+    <test name="UpdatePasswordTest">
+        <classes>
+            <class name="com.reformation.tests.UpdatePasswordTest"/>
+        </classes>
+    </test>
+    <test name="VIPProgramTest">
+        <classes>
+            <class name="com.reformation.tests.VIPProgramTest"/>
+        </classes>
+    </test> -->
 </suite>
