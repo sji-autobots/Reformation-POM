@@ -19,4 +19,5 @@ com\reformation\tests\DeleteFromCartTest.class
 com\reformation\tests\HomePageTest.class
 com\reformation\tests\PreOrderLabel.class
 com\reformation\tests\BagAddUnitsTest.class
+com\reformation\tests\ISPULabelCheckTest.class
 com\reformation\tests\AddUnitsTest.class

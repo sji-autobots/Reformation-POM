@@ -36,11 +36,11 @@ public class BaseTest {
         logger.info("WebDriver initialized");
     }
 
-    @AfterMethod
-    public void tearDown() {
-        DriverFactory.quitDriver();
-        logger.info("WebDriver quit");
-    }
+    // @AfterMethod
+    // public void tearDown() {
+    //     DriverFactory.quitDriver();
+    //     logger.info("WebDriver quit");
+    // }
 
     @AfterSuite
     public void tearDownSuite() {

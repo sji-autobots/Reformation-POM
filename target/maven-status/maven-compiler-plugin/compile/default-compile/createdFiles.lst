@@ -1,5 +1,6 @@
 com\reformation\utils\ConfigReader.class
+com\reformation\pages\CartPage.class
 com\reformation\pages\HomePage.class
 com\reformation\utils\DriverFactory.class
 com\reformation\pages\BasePage.class
-pages\CartPage.class
+com\reformation\pages\PDPPage.class
