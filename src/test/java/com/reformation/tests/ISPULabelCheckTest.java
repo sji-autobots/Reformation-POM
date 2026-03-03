@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 
 public class ISPULabelCheckTest extends BaseTest {
 
-    @Test
+    @Test 
     public void testISPULabel() throws InterruptedException {
         // Go to PDP page (assume direct navigation for this test)
         PDPPage pdp = new PDPPage(driver);
