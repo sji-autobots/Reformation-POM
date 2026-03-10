@@ -1,4 +1,4 @@
-package com.reformation.tests;
+package com.reformation.base;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 public class BaseTest {
+        
     protected WebDriver driver;
     protected static ExtentReports extent;
     protected ExtentTest test;
@@ -36,11 +37,11 @@ public class BaseTest {
         logger.info("WebDriver initialized");
     }
 
-    // @AfterMethod
-    // public void tearDown() {
-    //     DriverFactory.quitDriver();
-    //     logger.info("WebDriver quit");
-    // }
+    @AfterMethod
+    public void tearDown() {
+        // DriverFactory.quitDriver();
+        // logger.info("WebDriver quit");
+    }
 
     @AfterSuite
     public void tearDownSuite() {

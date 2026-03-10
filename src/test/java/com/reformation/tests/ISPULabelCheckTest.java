@@ -5,6 +5,7 @@ import static org.apache.commons.lang3.ObjectUtils.wait;
 import java.time.Duration;
 
 import com.reformation.pages.PDPPage;
+import com.reformation.base.BaseTest;
 import com.reformation.pages.CartPage;
 
 import org.openqa.selenium.By;

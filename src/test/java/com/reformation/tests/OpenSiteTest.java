@@ -1,6 +1,6 @@
 package com.reformation.tests;
 
-
+import com.reformation.base.BaseTest;
 
 public class OpenSiteTest extends BaseTest {
 

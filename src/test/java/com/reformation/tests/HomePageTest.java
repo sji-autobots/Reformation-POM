@@ -1,7 +1,9 @@
 package com.reformation.tests;
 
 import com.aventstack.extentreports.Status;
+import com.reformation.base.BaseTest;
 import com.reformation.pages.HomePage;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

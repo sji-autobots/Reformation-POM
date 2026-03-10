@@ -1,5 +1,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Reformation Automation Suite">
+    <test name="Cute Too Recently Viewed Test">
+        <classes>
+            <class name="com.reformation.tests.CuteTooRecentlyViewedTest"/>
+        </classes>
+    </test>
+</suite>
+
+<!-- <suite name="Reformation Automation Suite">
     <test name="Cart Tests">
         <classes>
             <class name="com.reformation.tests.AddUnitsTest"/>
@@ -30,7 +38,7 @@
         <classes>
             <class name="com.reformation.tests.OpenSiteTest"/>
         </classes>
-    </test>
+    </test> -->
     <!-- <test name="HomePageTest">
         <classes>
             <class name="com.reformation.tests.HomePageTest"/>
@@ -81,4 +89,3 @@
             <class name="com.reformation.tests.VIPProgramTest"/>
         </classes>
     </test> -->
-</suite>
