@@ -62,6 +62,64 @@ public class PDPPage {
         this.wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(25));
     }
 
+    /**
+     * Selects a color swatch by its visible name (e.g., "Black").
+     */
+    public void selectColor(String colorName) {
+        System.out.println("[DEBUG] Waiting for color swatch '" + colorName + "' to be clickable...");
+        WebElement colorSwatch = wait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//button[contains(@class,'swatch--color-pdp') and @title='" + colorName + "']")));
+        System.out.println("[DEBUG] Scrolling color swatch '" + colorName + "' into view...");
+        ((org.openqa.selenium.JavascriptExecutor) driver)
+            .executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});", colorSwatch);
+        // Wait for overlays to disappear if present
+        try {
+            Thread.sleep(500); // Small pause for overlays
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+        System.out.println("[DEBUG] Clicking color swatch '" + colorName + "' using JavascriptExecutor...");
+        ((org.openqa.selenium.JavascriptExecutor) driver)
+            .executeScript("arguments[0].click();", colorSwatch);
+        System.out.println("[DEBUG] Color swatch '" + colorName + "' clicked.");
+    }
+
+    /**
+     * Selects a size by its visible name (e.g., "XS").
+     */
+    public void selectSize(String sizeName) {
+        
+        System.out.println("[DEBUG] Clicking size dropdown before searching for size options...");
+        WebElement sizeDropdown = wait.until(ExpectedConditions.elementToBeClickable(
+            By.xpath("//div[@class='pdp_sizepicker__label-toggle flex flex-space-between flex-grow-1 flex-align-center']")));
+        sizeDropdown.click();
+        System.out.println("[DEBUG] Waiting for size button '" + sizeName + "' to be clickable...");
+        WebElement sizeBtn = wait.until(ExpectedConditions.elementToBeClickable(
+            By.xpath("//button[@aria-label='Size: " + sizeName + "']")));
+        System.out.println("[DEBUG] Clicking size button '" + sizeName + "'...");
+        sizeBtn.click();
+        wait.until(ExpectedConditions.attributeToBe(sizeBtn, "aria-pressed", "true"));
+        System.out.println("[DEBUG] Size button '" + sizeName + "' selected.");
+    }
+
+    /**
+     * Navigates to the cart page by clicking the cart icon.
+     */
+    public void goToCart() {
+        WebElement cartIcon = wait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//a[contains(@href,'cart')]")));
+        cartIcon.click();
+    }
+
+    /**
+     * Clicks the checkout button on the cart page.
+     */
+    public void clickCheckout() {
+        WebElement checkoutBtn = wait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//a[contains(.,'checkout')]")));
+        checkoutBtn.click();
+    }
+
     public void openISPU() {
         driver.get("https://storefront:2025-Ref4Eva@stage.thereformation.com/1313793IVO002.html");
     }
@@ -154,19 +212,28 @@ public class PDPPage {
     }
 
     public void enterPostalCodeAndFindStores(String postalCode) {
+        System.out.println("[DEBUG] Waiting for postal code input to be visible...");
         WebElement postalInput = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//input[@id='store-postal-code']")));
+            By.xpath("//input[@id='store-postal-code']")));
+        System.out.println("[DEBUG] Clearing postal code input...");
         postalInput.clear();
+        System.out.println("[DEBUG] Entering postal code: '" + postalCode + "'");
         postalInput.sendKeys(postalCode);
+        System.out.println("[DEBUG] Waiting for 'Find stores' button...");
         WebElement findStoresBtn = driver.findElement(By.xpath("//button[normalize-space()='Find stores']"));
+        System.out.println("[DEBUG] Clicking 'Find stores' button...");
         findStoresBtn.click();
     }
 
     public void selectStoreAndSave(String storeName) {
+        System.out.println("[DEBUG] Waiting for store option: '" + storeName + "' to be clickable...");
         WebElement storeOption = wait.until(ExpectedConditions.elementToBeClickable(
-                By.xpath("//span[normalize-space()=" + escapeXpath(storeName) + "]")));
+            By.xpath("//span[normalize-space()=" + escapeXpath(storeName) + "]")));
+        System.out.println("[DEBUG] Clicking store option: '" + storeName + "'");
         storeOption.click();
+        System.out.println("[DEBUG] Waiting for 'Save store' button to be present...");
         WebElement saveBtn = driver.findElement(By.xpath("//button[normalize-space()='Save store']"));
+        System.out.println("[DEBUG] Clicking 'Save store' button");
         saveBtn.click();
     }
 
