@@ -2,7 +2,7 @@
 <suite name="Reformation Automation Suite">
     <test name="Cute Too Recently Viewed Test">
         <classes>
-            <class name="com.reformation.tests.CuteTooRecentlyViewedTest"/>
+            <class name="com.reformation.tests.CreditCardCheckoutSignedInTest"/>
         </classes>
     </test>
 </suite>

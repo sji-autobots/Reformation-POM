@@ -39,8 +39,8 @@ public class BaseTest {
 
     @AfterMethod
     public void tearDown() {
-        // DriverFactory.quitDriver();
-        // logger.info("WebDriver quit");
+        DriverFactory.quitDriver();
+        logger.info("WebDriver quit");
     }
 
     @AfterSuite

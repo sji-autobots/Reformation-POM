@@ -1,0 +1,78 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Test output
+/test-output/
+/surefire-reports/
+
+# Environment
+.env
+
+# Build
+/build/
+
+# Misc
+*.swp
+*.swo
+
+# Python (if any)
+__pycache__/
+*.pyc
+
+# Node (if any)
+node_modules/
+
+# Ignore user-specific files
+*.local
+*.user
+*.sublime-workspace
+*.sublime-project
+
+# Ignore generated test classes
+/test-classes/
+
+# Ignore generated sources
+/target/generated-sources/
+/target/generated-test-sources/
+
+# Ignore backup files
+*~
+*.bak
+
+# Ignore coverage reports
+coverage/
+*.lcov
+
+# Ignore package-lock and yarn lock (if any)
+package-lock.json
+yarn.lock

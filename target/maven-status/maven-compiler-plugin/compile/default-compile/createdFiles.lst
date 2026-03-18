@@ -1,0 +1,14 @@
+com\reformation\pages\OrderHistoryPage.class
+com\reformation\pages\PDPPage.class
+com\reformation\pages\AccountPage.class
+com\reformation\utils\ConfigReader.class
+com\reformation\pages\CheckoutPage.class
+com\reformation\pages\CartPage.class
+com\reformation\pages\HomePage.class
+com\reformation\utils\DriverFactory.class
+com\reformation\pages\BasePage.class
+com\reformation\pages\LoginPage.class
+com\reformation\pages\VIPPage.class
+com\reformation\pages\AddressPage.class
+com\reformation\pages\PasswordPage.class
+com\reformation\utils\CountrySwitcher.class
